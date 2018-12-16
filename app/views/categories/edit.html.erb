@@ -1,0 +1,7 @@
+<h1>Editar Categoría</h1>
+
+<%= render 'form', category: @category %>
+
+<%= button_to 'Mostar', category_path(@category), method: 'get' %>
+<%= button_to 'Inicio', categories_path, method: 'get' %>
+

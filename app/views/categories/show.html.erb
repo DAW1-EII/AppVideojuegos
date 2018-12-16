@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @category.nombre %>
+</p>
+
+<p>
+  <strong>Descrición:</strong>
+  <%= @category.description %>
+</p>
+
+<% if user_signed_in? %>
+  <%= button_to 'Editar', edit_category_path(@category), method: 'get' %>
+<% end %>
+
+<%= button_to 'Inicio', categories_path, method: 'get' %>
+
